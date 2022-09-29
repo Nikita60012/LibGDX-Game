@@ -151,10 +151,10 @@ public class MyFrstGameScreen implements Screen {
 			camera.unproject(touchPos);
 			snake.x = touchPos.x - 64 / 2;
 		}
-		if(Gdx.input.isKeyPressed(Input.Keys.LEFT)) snake.x -= 300 * Gdx.graphics.getDeltaTime();
-		if(Gdx.input.isKeyPressed(Input.Keys.RIGHT)) snake.x += 300 * Gdx.graphics.getDeltaTime();
-		if(Gdx.input.isKeyPressed(Input.Keys.A)) snake.x -= 300 * Gdx.graphics.getDeltaTime();
-		if(Gdx.input.isKeyPressed(Input.Keys.D)) snake.x += 300 * Gdx.graphics.getDeltaTime();
+		if(Gdx.input.isKeyPressed(Input.Keys.LEFT)) snake.x -= 400 * Gdx.graphics.getDeltaTime();
+		if(Gdx.input.isKeyPressed(Input.Keys.RIGHT)) snake.x += 400 * Gdx.graphics.getDeltaTime();
+		if(Gdx.input.isKeyPressed(Input.Keys.A)) snake.x -= 400 * Gdx.graphics.getDeltaTime();
+		if(Gdx.input.isKeyPressed(Input.Keys.D)) snake.x += 400 * Gdx.graphics.getDeltaTime();
 
 		if(snake.x < 0) snake.x = 0;
 		if(snake.x > 800 - 64) snake.x = 800 - 64;
